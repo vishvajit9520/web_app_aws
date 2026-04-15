@@ -3,6 +3,6 @@ version: 0.2
 phases:
   build:
     commands:
-      - docker build -t ecs-app .
-      - docker tag ecs-app:latest <account_id>.dkr.ecr.ap-south-1.amazonaws.com/ecs-app:latest
-      - docker push <account_id>.dkr.ecr.ap-south-1.amazonaws.com/ecs-app:latest
+      - docker build -t web_app_aws .
+      - docker tag web_app_aws:latest <account_id>.dkr.ecr.ap-south-1.amazonaws.com/web_app_aws:latest
+      - docker push <account_id>.dkr.ecr.ap-south-1.amazonaws.com/web_app_aws:latest
